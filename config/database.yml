@@ -1,0 +1,29 @@
+default: &default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  host: localhost
+
+development:
+  <<: *default
+  username: rails
+  password: asdfasdf
+  database: rails
+
+test:
+  <<: *default
+  username: rails
+  password: asdfasdf
+  database: test_rails
+
+production:
+  <<: *default
+  username: rails
+  password: asdfasdf
+  database: prod_rails
+
+staging:
+  <<: *default
+  username: rails
+  password: asdfasdf
+  database: stag_rails
