@@ -1,29 +1,18 @@
 default: &default
   adapter: postgresql
+  encoding: utf8
   pool: 5
-  timeout: 5000
-  host: localhost
+  username: madluay
+  password: madluay
 
 development:
   <<: *default
-  username: rails
-  password: asdfasdf
-  database: rails
-
-test:
-  <<: *default
-  username: rails
-  password: asdfasdf
-  database: test_rails
+  database: react_development
 
 production:
   <<: *default
-  username: rails
-  password: asdfasdf
-  database: prod_rails
+  database: react
 
 staging:
   <<: *default
-  username: rails
-  password: asdfasdf
-  database: stag_rails
+  database: react_staging
