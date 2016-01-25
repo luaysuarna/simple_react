@@ -31,6 +31,9 @@ gem 'devise'
 # handle error notifier
 gem 'exception_notification'
 
+# handle react
+gem 'react-rails', '~> 1.5.0'
+
 group :development, :test do
   gem 'byebug'
 end
